@@ -10,8 +10,9 @@ const jost = Jost({
 export default function Home() {
   return (
       <header className="flex justify-between px-8 py-4 top-0 sticky">
-        <div className="flex gap-2 items-center">
-            <Image src={"/logo.png"} alt={""} width="50" height="50" />
+        <div className="flex items-end gap-1">
+            <Image src={"/logo.png"} alt={""} width="20" height="20" />
+            <h1>evelup</h1>
         </div>
         <nav className="flex gap-6 items-center">
             <Link className={jost.className} href={"/about"}>About</Link>
