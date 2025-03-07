@@ -22,7 +22,7 @@ export default function LoginForm() {
 
             </div>
             <div className='py-1 px-4 bg-white/10 rounded-full flex gap-2 items-center'>
-                <input type="text" placeholder='Username' className='outline-none' />
+                <input type="email" placeholder='Email' className='outline-none' />
             </div>
             <div className='py-1 px-4 bg-white/10 rounded-full flex gap-2 items-center mb-2'>
                 <input type="password" placeholder='Password' className='outline-none' />
