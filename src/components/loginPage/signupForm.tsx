@@ -38,7 +38,7 @@ export default function SignupForm() {
         }
         const csrfResponse = await axios.get(`/sanctum/csrf-cookie`);
         console.log("CSRF Token Set:", csrfResponse.status);
-        const response = await axios.post(`/api/register`, formData);
+        const response = await axios.post(`/register`, formData);
 
         console.log(response.data);
     }
