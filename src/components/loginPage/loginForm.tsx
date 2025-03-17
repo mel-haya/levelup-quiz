@@ -36,15 +36,13 @@ export default function LoginForm() {
         const csrfResponse = await axios.get(`/sanctum/csrf-cookie`);
         console.log("CSRF Token Set:", csrfResponse.status);
         try {
-            const response = await axios.post(`/login`, formData);
-            if(response.status === 200)
+            await axios.post(`/login`, formData);
             router.push('/dashboard')
         }
         catch(error){
             if(Axios.isAxiosError(error) && error?.response?.status === 422)
                 setError(true)
         }
-
     }
 
     return (

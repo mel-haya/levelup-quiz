@@ -9,7 +9,7 @@ const funnel = Funnel_Sans({
 
 export default function Hero() {
   return (
-      <main className={`px-4 py-2 rounded-full bg-blue-500 cursor-pointer ${funnel.className}`}>
+      <main className={`px-6 py-3 rounded-full text-xl bg-blue-500 cursor-pointer ${funnel.className}`}>
         Get started
       </main>
   );

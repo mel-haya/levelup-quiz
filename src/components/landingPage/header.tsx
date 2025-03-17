@@ -9,7 +9,7 @@ const jost = Jost({
 
 export default function Home() {
   return (
-      <header className="flex justify-between px-8 py-4 top-0 sticky">
+      <header className="flex justify-between px-8 py-8 top-0 sticky text-white text-2xl">
         <Link className="flex items-end gap-1" href='/'>
             <Image src={"/logo.png"} alt={""} width="20" height="20" />
             <h1>evelup</h1>
